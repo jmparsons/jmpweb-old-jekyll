@@ -1,9 +1,5 @@
-#Node
 node_modules
-
-# Jekyll
 _site/
-.sass-cache/
-
-#OSX
+.sass-cache
+.jekyll-metadata
 .DS_Store
