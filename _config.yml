@@ -1,3 +1,5 @@
+url: "jmparsons.github.io/jmpweb"
+
 exclude:
   - Gemfile
   - Gemfile.lock
