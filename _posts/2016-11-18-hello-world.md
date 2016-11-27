@@ -8,3 +8,9 @@ categories: general
 ## This is my first post.
 
 Testing 123.
+
+```scala
+def hello() = Action.async {
+  Ok(views.index())
+}
+```
