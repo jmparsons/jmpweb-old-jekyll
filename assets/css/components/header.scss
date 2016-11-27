@@ -1,0 +1,11 @@
+.site-header {
+  background: #ccc;
+}
+
+.topnav {
+  @include breakpoint(small down) {
+    li:first-child {
+      display: none;
+    }
+  }
+}

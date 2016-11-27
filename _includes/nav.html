@@ -1,7 +1,11 @@
 <nav>
-  <ul>
+  <ul class="topnav menu">
     {% for nav in site.data.nav %}
+    {% if nav.href == page.permalink %}
+    <li class="active"><a href="{{ nav.href | prepend:site.baseurl }}">{{ nav.title }}</a></li>
+    {% else %}
     <li><a href="{{ nav.href | prepend:site.baseurl }}">{{ nav.title }}</a></li>
+    {% endif %}
     {% endfor %}
   </ul>
 </nav>
