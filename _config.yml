@@ -1,5 +1,5 @@
 baseurl: "/jmpweb"
-url: "http://jmparsons.github.io/jmpweb"
+url: "http://jmparsons.github.io"
 
 sass:
   sass_dir: "/assets/css"
