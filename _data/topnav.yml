@@ -1,14 +1,14 @@
 - title: "Home"
-  href: "/"
+  link: "/"
 
 - title: "Services"
-  href: "/services/"
+  link: "/services/"
 
 - title: "Clients"
-  href: "/clients/"
+  link: "/clients/"
 
 - title: "About"
-  href: "/about/"
+  link: "/about/"
 
 - title: "Contact"
-  href: "/contact/"
+  link: "/contact/"

@@ -1,0 +1,11 @@
+<nav>
+  <ul class="botnav menu simple">
+    {% for nav in site.data.botnav %}
+    {% if nav.link == page.permalink %}
+    <li class="active"><a href="{{ nav.link | relative_url }}">{{ nav.title }}</a></li>
+    {% else %}
+    <li><a href="{{ nav.link | relative_url }}">{{ nav.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
