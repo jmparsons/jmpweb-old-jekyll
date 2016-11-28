@@ -10,3 +10,12 @@ body {
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
+
+@mixin navlit() {
+  color: #888;
+  transition: color 0.3s;
+  &:hover {
+    color: #fff;
+    transition: color 0s;
+  }
+}

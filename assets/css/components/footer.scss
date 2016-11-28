@@ -16,12 +16,31 @@
   }
 
   .botnav {
+    height: 40px;
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
+    .menu {
+      a {
+        font-size: rem-calc(14);
+        line-height: 36px;
+        @include navlit()
+      }
+      .active a {
+        background: transparent;
+        color: #fff;
+      }
+    }
   }
 
   .socialnav {
     display: inline-block;
+    .menu {
+      a {
+        font-size: rem-calc(20);
+        line-height: 36px;
+        @include navlit()
+      }
+    }
   }
 
   .copycard {
