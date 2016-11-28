@@ -1,6 +1,6 @@
-$(document).foundation();
-
 $(document).ready(function() {
+
+  $(document).foundation();
 
   $(".cform").submit(function(event){
     event.preventDefault();
