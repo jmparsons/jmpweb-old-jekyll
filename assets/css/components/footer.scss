@@ -1,5 +1,7 @@
-.site-footer {
-  background: #eee;
+.bot {
+  background: #1d1e20;
+  border-top: 1px solid #3d3f44;
+  color: #fff;
 
   .bottom-left {
     align-items: center;
@@ -15,9 +17,14 @@
 
   .botnav {
     display: inline-block;
+    font-family: 'Open Sans', sans-serif;
   }
 
   .socialnav {
     display: inline-block;
+  }
+
+  .copycard {
+    font-family: 'Open Sans', sans-serif;
   }
 }

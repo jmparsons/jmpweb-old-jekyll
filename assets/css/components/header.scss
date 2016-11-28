@@ -1,20 +1,22 @@
-.site-header {
-  background: #eee;
+.top {
+  background: rgba(31,32,34,0.95);
+  border-bottom: 1px solid #3d3f44;
 
   h1.logo {
     margin: 0;
     padding: 0;
     font-size: 1rem;
     line-height: 1;
-  }
-
-  .logo a {
-    font-family: 'Denmark';
-    font-size: 2.2rem;
-    font-weight: 300;
+    a {
+      font-family: 'Denmark';
+      font-size: 2.2rem;
+      font-weight: 300;
+      color: #ccc;
+    }
   }
 
   .topnav {
+    font-family: 'Open Sans', sans-serif;
     @include breakpoint(small down) {
       li:first-child {
         display: none;
