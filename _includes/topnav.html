@@ -1,5 +1,5 @@
-<nav>
-  <ul class="topnav menu">
+<nav class="topnav">
+  <ul class="menu">
     {% for nav in site.data.topnav %}
     {% if nav.link == page.permalink %}
     <li class="active"><a href="{{ nav.link | relative_url }}">{{ nav.title }}</a></li>

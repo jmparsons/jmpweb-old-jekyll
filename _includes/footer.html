@@ -1,12 +1,9 @@
 <footer class="site-footer">
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="top-bar">
-        <div class="top-bar-left">
-          {% include botnav.html %}
-        </div>
-        <div class="top-bar-right">&copy; 2003-2016 JMParsons</div>
-      </div>
+  <div class="row medium-unstack align-middle">
+    <div class="columns bottom-left">
+      {% include botnav.html %}
+      {% include socialnav.html %}
     </div>
+    <div class="columns bottom-right">&copy; 2003-{{ site.time | date: '%Y' }} JMParsons</div>
   </div>
 </footer>

@@ -1,3 +1,23 @@
 .site-footer {
   background: #eee;
+
+  .bottom-left {
+    align-items: center;
+  }
+
+  .bottom-right {
+    align-items: center;
+    text-align: center;
+    @include breakpoint(medium) {
+      text-align: right;
+    }
+  }
+
+  .botnav {
+    display: inline-block;
+  }
+
+  .socialnav {
+    display: inline-block;
+  }
 }
