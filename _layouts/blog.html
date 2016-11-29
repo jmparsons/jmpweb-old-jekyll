@@ -1,25 +1,18 @@
 ---
-layout: fixed
+layout: default
 ---
 <div class="blog">
-
-  <div class="row medium-unstack">
-    <div class="large-8 columns">
-      <h3>{{page.title}}</h3>
-      <ul class="post-list">
-        {% for post in site.posts %}
-          <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <h2>
-              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            </h2>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="large-4 columns">
-      Sidebar
+  <div class="row toppad">
+    <div class="large-12 columns">
+      <div class="row medium-unstack">
+        <div class="large-8 medium-7 columns">
+          <h3>{{page.title}}</h3>
+          {% include posts.html %}
+        </div>
+        <div class="large-4 medium-5 columns">
+          Sidebar
+        </div>
+      </div>
     </div>
   </div>
-
 </div>
