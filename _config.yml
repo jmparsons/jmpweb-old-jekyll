@@ -1,6 +1,9 @@
 baseurl: "/jmpweb"
 url: "http://jmparsons.github.io"
 
+title: JMParsons
+description: Professional HTML5, Javascript, Scala, iOS, and Android Developer.
+
 sass:
   sass_dir: "/assets/css"
   style: :compressed

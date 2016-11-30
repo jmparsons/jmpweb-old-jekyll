@@ -1,6 +1,8 @@
 ---
 layout: about
-title: About
+title: About · JMParsons
+excerpt: |
+  This is my about page.
 permalink: /about
 ---
 ## About
