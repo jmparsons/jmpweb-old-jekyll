@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sitemap
-permalink: /sitemap/
+permalink: /sitemap
 ---
 ## Sitemap page
 Needs some simple markup.
