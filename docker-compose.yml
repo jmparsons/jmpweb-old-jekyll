@@ -1,6 +1,6 @@
 web:
   build: .
-  command: bundle exec jekyll serve --incremental --host 0.0.0.0 --baseurl ''
+  command: bundle exec jekyll serve --drafts --incremental --host 0.0.0.0 --baseurl ''
   volumes:
     - .:/app
   ports:
