@@ -3,7 +3,6 @@ layout: page
 title: Contact
 permalink: /contact
 ---
-
 <div class="row align-center">
   <div class="medium-6 columns">
     <div class="columns">

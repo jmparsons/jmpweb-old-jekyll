@@ -2,7 +2,8 @@
 layout: page
 title: Services
 permalink: /services
-mode: light
+styles:
+- light
 ---
 ## Services
 

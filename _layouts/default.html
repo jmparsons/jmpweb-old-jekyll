@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
   {% include head.html %}
-
   <body>
     <div class="app">
       <div class="main">
         {% include header.html %}
-        <main class="core {{ layout.mode }} {{ page.mode }}" aria-label="Content">
-        {{ content }}
+        <main class="core toppad {{ page.styles | join " " }}" aria-label="Content">
+          {% if page.fixed == false %}
+            {{ content }}
+          {% else %}
+            <div class="row">
+              <div class="large-12 columns">
+                {{ content }}
+              </div>
+            </div>
+          {% endif %}
         </main>
         {% include footer.html %}
       </div>
     </div>
   </body>
   {% include scripts.html %}
-
 </html>

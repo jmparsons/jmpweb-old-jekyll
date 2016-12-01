@@ -13,7 +13,14 @@ body {
 }
 
 .toppad {
-  padding-top: 60px;
+  padding-top: 0;
+  @include breakpoint(medium) {
+    padding-top: 60px;
+  }
+}
+
+.nopad {
+  padding-top: 0;
 }
 
 h1, h2, h3 {
