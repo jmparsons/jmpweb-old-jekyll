@@ -5,7 +5,7 @@
     <div class="app">
       <div class="main">
         {% include header.html %}
-        <main class="core toppad {{ page.styles | join " " }}" aria-label="Content">
+        <main class="core toppad {{ page.styles | join: " " }}" aria-label="Content">
           {% if page.fixed == false %}
             {{ content }}
           {% else %}

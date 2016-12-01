@@ -15,6 +15,7 @@ permalink: /blog/:title
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-coffeescript
 
 exclude:
   - Gemfile
