@@ -8,6 +8,10 @@
   @include breakpoint(small down) {
     position: relative;
     height: auto;
+    .columns {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .logo {
@@ -15,40 +19,58 @@
     padding: 0;
     font-size: rem-calc(36);
     line-height: 1;
-    display: inline-block;
+    display: flex;
+    border-bottom: 1px solid #3d3f44;
+    @include breakpoint(medium up) {
+      border-bottom: 0;
+    }
     a {
       font-family: 'Denmark';
       font-size: inherit;
-      display: inline-block;
+      display: flex;
       font-weight: normal;
       line-height: 60px;
       height: 60px;
       color: #ccc;
+      flex: auto;
+      justify-content: center;
+      @include breakpoint(medium up) {
+        flex: none;
+      }
     }
   }
 
   .topnav {
     font-family: 'Open Sans', sans-serif;
     .menu {
+      li {
+        flex: auto;
+        &:first-child {
+          display: none;
+          @include breakpoint(medium up) {
+            display: flex;
+          }
+        }
+      }
       a {
-        padding: 0 15px;
+        padding: 0;
         font-size: rem-calc(14);
-        line-height: 56px;
+        line-height: 46px;
         font-weight: 400;
         border-top: 2px solid transparent;
         border-bottom: 2px solid transparent;
         transition: color 0.3s;
+        justify-content: center;
+        @include breakpoint(medium up) {
+          padding: 0 15px;
+          line-height: 56px;
+        }
         @include navlit()
       }
       .active a {
         background: transparent;
         color: #fff;
         border-bottom: 2px solid #17abf0;
-      }
-      @include breakpoint(small down) {
-        li:first-child {
-          display: none;
-        }
       }
     }
   }
