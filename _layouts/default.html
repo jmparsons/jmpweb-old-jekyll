@@ -3,9 +3,9 @@
   {% include head.html %}
   <body>
     <div class="app">
-      <div class="main">
+      <div class="core">
         {% include header.html %}
-        <main class="core toppad {{ page.styles | join: " " }}" aria-label="Content">
+        <main class="main toppad {{ page.styles | join: " " }}" aria-label="Content">
           {% if page.fixed == false %}
             {{ content }}
           {% else %}
