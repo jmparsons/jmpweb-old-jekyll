@@ -1,9 +1,13 @@
 <footer class="bot">
-  <div class="row medium-unstack align-middle">
+  <div class="row medium-unstack">
     <div class="columns bottom-left">
-      {% include botnav.html %}
-      {% include socialnav.html %}
+      <div class="footernav">
+        {% include botnav.html %}
+        {% include socialnav.html %}
+      </div>
     </div>
-    <div class="columns bottom-right copycard">&copy; 2003-{{ site.time | date: '%Y' }} JMParsons</div>
+    <div class="columns bottom-right">
+      <div class="copycard">&copy; 2003-{{ site.time | date: '%Y' }} JMParsons</div>
+    </div>
   </div>
 </footer>

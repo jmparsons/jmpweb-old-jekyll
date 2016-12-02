@@ -3,6 +3,13 @@
   border-top: 1px solid #3d3f44;
   color: #fff;
 
+  @include breakpoint(small down) {
+    .columns {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .bottom-left {
     align-items: center;
   }
@@ -15,14 +22,66 @@
     }
   }
 
+  .footernav {
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(medium up) {
+      flex-wrap: nowrap;
+    }
+  }
+
   .botnav {
-    height: 40px;
-    display: inline-block;
-    font-family: 'Open Sans', sans-serif;
+    a {
+      font-size: rem-calc(14);
+      font-family: 'Open Sans', sans-serif;
+    }
+    li {
+      flex: 0 0 20%;
+    }
+  }
+
+  .socialnav {
+    a {
+      font-size: rem-calc(20);
+    }
+    li {
+      flex: 0 0 15%;
+    }
+  }
+
+  .botnav, .socialnav {
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    border-bottom: 1px solid #3d3f44;
+    @include breakpoint(medium up) {
+      flex: 0;
+      max-width: none;
+      border-bottom: 0;
+    }
     .menu {
+      align-items: initial;
+      justify-content: center;
+      height: 50px;
+      @include breakpoint(medium up) {
+        align-items: initial;
+      }
+      li {
+        display: flex;
+        @include breakpoint(medium up) {
+          flex: 0;
+        }
+      }
       a {
-        font-size: rem-calc(14);
-        line-height: 36px;
+        flex: 1;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        @include breakpoint(medium up) {
+          flex: 0;
+          margin: 0 15px 0 0;
+          justify-content: flex-start;
+        }
         @include navlit()
       }
       .active a {
@@ -32,18 +91,8 @@
     }
   }
 
-  .socialnav {
-    display: inline-block;
-    .menu {
-      a {
-        font-size: rem-calc(20);
-        line-height: 36px;
-        @include navlit()
-      }
-    }
-  }
-
   .copycard {
+    line-height: 50px;
     font-family: 'Open Sans', sans-serif;
   }
 }
