@@ -6,3 +6,17 @@
     transition: color 0s;
   }
 }
+
+@mixin slim() {
+  transition: height 0.3s;
+  .slim & {
+    height: 40px;
+  }
+}
+
+@mixin slimlogo() {
+  transition: font-size 0.3s;
+  .slim & {
+    font-size: rem-calc(30);
+  }
+}

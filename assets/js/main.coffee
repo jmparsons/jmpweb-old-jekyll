@@ -1,7 +1,14 @@
 ---
 ---
 $ ->
-  $(".cform").submit (event) ->
+
+  # slim
+  $(window).on "scroll", (event) ->
+    $("body").toggleClass "slim", $(this).scrollTop() > 20
+    return
+
+  # contact form
+  $(".cform").on "submit", (event) ->
     event.preventDefault()
     valid = true
     $(this).find("[required]").each (index, element) ->
