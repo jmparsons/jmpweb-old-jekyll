@@ -4,6 +4,8 @@ title: About · JMParsons
 excerpt: |
   This is my about page.
 permalink: /about
+styles:
+- center
 ---
 <div class="row medium-unstack">
   <div class="medium-8 columns" markdown="1">
