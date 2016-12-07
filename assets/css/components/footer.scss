@@ -68,9 +68,6 @@
       }
       li {
         display: flex;
-        @include breakpoint(medium up) {
-          flex: 0;
-        }
       }
       a {
         flex: 1;
@@ -78,7 +75,6 @@
         align-items: center;
         justify-content: center;
         @include breakpoint(medium up) {
-          flex: 0;
           margin: 0 15px 0 0;
           justify-content: flex-start;
         }

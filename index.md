@@ -1,6 +1,7 @@
 ---
 layout: default
 fixed: false
+permalink: /
 styles:
 - nopad
 ---
