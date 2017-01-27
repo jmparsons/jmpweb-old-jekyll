@@ -6,17 +6,15 @@
       <div class="core">
         {% include header.html %}
         <main class="main toppad {{ page.styles | join: " " }}" aria-label="Content">
-          <div class="inner-main">
-            {% if page.fixed == false %}
-              {{ content }}
-            {% else %}
-              <div class="row">
-                <div class="large-12 columns">
-                  {{ content }}
-                </div>
+          {% if page.fixed == false %}
+            {{ content }}
+          {% else %}
+            <div class="row">
+              <div class="large-12 columns">
+                {{ content }}
               </div>
-            {% endif %}
             </div>
+          {% endif %}
         </main>
         {% include footer.html %}
       </div>
